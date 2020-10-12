@@ -1,0 +1,50 @@
+html {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  width: 100%;
+  min-width: 320px;
+  margin: 0;
+  position: relative;
+
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  word-wrap: normal;
+  color: $color;
+  background-color: $background-color;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  object-fit: contain;
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  min-width: initial;
+  height: 1px;
+  min-height: initial;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
