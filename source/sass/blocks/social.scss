@@ -1,0 +1,62 @@
+.social {
+  @include no-list;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90px;
+}
+
+.social__item {
+  display: flex;
+  align-self: center;
+
+  &--tw {
+    margin-top: -4px;
+  }
+
+  &:not(:nth-child(3n)) {
+    margin-right: 15px;
+    margin-bottom: 2px;
+  }
+}
+
+.social__icon {
+  width: 11px;
+  height: 20px;
+
+  &--insta {
+    width: 20px;
+    height: 20px;
+  }
+
+  &--tw {
+    width: 20px;
+    height: 16px;
+  }
+
+  &:hover {
+    opacity: 0.3;
+    fill: $color;
+  }
+
+  &:active {
+    opacity: 0.8;
+    fill: $color;
+  }
+
+  @media (max-width: 1023px) {
+    width: 9px;
+    height: 16px;
+
+    &--insta {
+      width: 16px;
+      height: 16px;
+    }
+
+    &--tw {
+      width: 16px;
+      height: 13px;
+    }
+  }
+}
+

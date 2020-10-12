@@ -1,0 +1,113 @@
+.form {
+  width: 403px;
+  margin: 0;
+  padding: 55px;
+}
+
+.form__text {
+  margin-top: 0;
+  margin-bottom: 35px;
+  width: 303px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  display: flex;
+  align-items: center;
+  color: $color-white;
+}
+
+.form__button {
+  position: relative;
+  display: block;
+  width: 303px;
+  padding: 15px 90px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: $color;
+  background-color: $color-white;
+  border: none;
+}
+
+.form label {
+  // position: relative;
+  padding-left: 45px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 13px;
+  display: flex;
+  align-items: center;
+  color: $color-white;
+}
+
+.form input {
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 100%;
+  height: 43px;
+  padding-top: 16px;
+  // padding-right: 45px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: 400;
+  font-size: 14px;
+  line-height: 21px;
+  border: none;
+}
+
+.form input::placeholder {
+  color: $color;
+  opacity: 1;
+}
+
+
+// .form__checkbox input + label {
+//   &::before {
+//     content: " ";
+//     position: absolute;
+//     left: 0;
+//     top: calc(50% - (30px / 2));
+
+//     width: 30px;
+//     height: 30px;
+
+//     border: 1px solid #101a56;
+//     cursor: pointer;
+//   }
+
+//   &::after {
+//     content: " ";
+//     position: absolute;
+//     left: 6px;
+//     top: calc(50% - (20px / 2));
+
+//     width: 20px;
+//     height: 10px;
+
+//     border-top: 1px solid #101a56;
+//     border-right: 1px solid #101a56;
+//     transform: rotate(135deg);
+//     opacity: 0;
+//   }
+// }
+
+// .form__checkbox input:checked + label {
+//   &::after {
+//     opacity: 1;
+//   }
+// }
+
+// .form__checkbox input:disabled + label {
+//   &::before {
+//     opacity: 0.5;
+//     cursor: not-allowed;
+//   }
+// }
+
+// .form__checkbox input:hover + label {
+//   &::before {
+//     border-color: $color-grey;
+//   }
+// }
