@@ -3,20 +3,26 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 90px;
+  width: 10.09%;
+  min-width: 117px;
+
+  @media (max-width: 1023px) {
+    width: 12.83%;
+    min-width: 87px;
+  }
 }
 
 .social__item {
   display: flex;
   align-self: center;
 
-  &--tw {
-    margin-top: -4px;
-  }
-
   &:not(:nth-child(3n)) {
-    margin-right: 15px;
-    margin-bottom: 2px;
+    margin-right: 33px;
+    margin-bottom: -1px;
+
+    @media (max-width: 1023px) {
+      margin-right: 23px;
+    }
   }
 }
 

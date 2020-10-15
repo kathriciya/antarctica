@@ -15,7 +15,7 @@
     background-color: $background-img;
     background-image: url("../img/banner-desktop@1x.png");
     background-repeat: no-repeat;
-    background-size: 1366px 555px;
+    background-size: cover;
     background-position: center;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -30,7 +30,6 @@
       height: 805px;
 
       background-image: url("../img/banner-tablet@1x.png");
-      background-size: 768px 805px;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/banner-tablet@2x.png");
@@ -45,7 +44,6 @@
       height: 760px;
 
       background-image: url("../img/banner-mobile@1x.png");
-      background-size: 320px 760px;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/banner-mobile@2x.png");
@@ -55,40 +53,55 @@
 }
 
 .banner__block {
+  position: relative;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  width: 84.92%;
-  min-width: 1160px;
+  // width: 84.92%;
+  width: 1160px;
   margin-bottom: 200px;
 
   @media (max-width: 1023px) {
+    align-items: center;
     width: 88.54%;
     min-width: 680px;
+    margin-bottom: 567px;
   }
 
   @media (max-width: 767px) {
-    width: 90.62;
+    width: 90.62%;
     min-width: 290px;
   }
 }
 
 .banner__form {
   position: absolute;
-  top: 71px;
-  right: 158px;
+  top: 50px;
+  right: 60px;
   background-color: $color;
+
+  @media (max-width: 1023px) {
+    top: 250px;
+    right: calc(50% - (403px / 2));
+  }
+
+  @media (max-width: 767px) {
+    top: 250px;
+    right: calc(50% - (290px / 2));
+  }
 }
 
 .banner h2 {
-  margin-top: 228px;
+  margin-top: 213px;
   margin-bottom: 0;
+  margin-left: 60px;
   font-weight: 600;
   font-size: 40px;
   line-height: 60px;
 
   @media (max-width: 1023px) {
-    margin-top: 0;
+    margin-top: 89px;
+    margin-left: 0;
     font-size: 34px;
     line-height: 51px;
   }
@@ -96,11 +109,13 @@
   @media (max-width: 767px) {
     font-size: 24px;
     line-height: 31px;
+    text-align: center;
   }
 }
 
-.banner p {
-  margin-top: 30px;
+.banner__text {
+  margin-top: 9px;
+  margin-left: 60px;
   margin-bottom: 0;
   font-weight: normal;
   font-size: 18px;
@@ -108,4 +123,20 @@
   display: flex;
   align-items: center;
   width: 352px;
+
+  @media (max-width: 1023px) {
+    margin-top: 5px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  @media (max-width: 767px) {
+    margin-top: 5px;
+    margin-left: 0;
+    text-align: center;
+    font-size: 16px;
+    line-height: 22px;
+    width: 80.31%;
+    min-width: 257px;
+  }
 }
