@@ -1,17 +1,22 @@
 .info {
   @include no-list;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
-  background-color: $color;
+  flex-wrap: wrap;
   width: 260px;
+
+  @media (max-width: 767px) {
+    margin-bottom: 39px;
+  }
 }
 
 .info__item {
   display: flex;
+  flex-direction: column;
 }
 
-.info p {
+.info__item p {
+  margin-bottom: 0;
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
@@ -20,7 +25,7 @@
   color: $color-white;
 }
 
-.info span {
+.info__item span {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -28,15 +33,3 @@
   align-items: center;
   color: $color-grey;
 }
-
-// .tours__button {
-//   font-weight: 600;
-//   font-size: 14px;
-//   line-height: 21px;
-//   // display: block;
-//   display: flex;
-//   align-items: center;
-//   color: $color;
-//   background-color: $color-white;
-//   padding: 46px 14px;
-// }
