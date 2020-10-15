@@ -8,6 +8,10 @@
   <title>Круизы в Антарктику</title>
   <meta name="Description" content="Круизы в Антарктику">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font">
+  <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font">
+  <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font">
+  <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font">
   <script>
     document.createElement("picture");
   </script>
@@ -17,29 +21,26 @@
 <body>
   <header class="header">
     <div class="header__block">
-      <a class="header__logo" aria-label="Иконка логотипа сайта Антарктика">
-        <svg class="header__icon" width="70" height="38">
-          <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
-        </svg>
-      </a>
-      <nav class="header__navigation navigation">
-        <button class="navigation__toggler toggler toggler--menu" type="button" id="button-menu"
-          aria-label="Переключатель меню">
-
-        </button>
-        <div class="navigation__wrapper">
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">Преимущества</a>
+      <nav class="header__menu header__menu--closed header__menu--nojs">
+        <a class="header__logo" aria-label="Иконка логотипа сайта Антарктика">
+          <svg class="header__icon" width="70" height="38" viewBox="0 0 70 38">
+            <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
+          </svg>
+        </a>
+        <button class="header__toggle" type="button" aria-label="Переключатель меню"></button>
+        <div class="header__wrapper">
+          <ul class="header__list">
+            <li class="header__item">
+              <a class="header__link" href="#advantages">Преимущества</a>
             </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">Направления</a>
+            <li class="header__item">
+              <a class="header__link" href="#">Направления</a>
             </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">Ближайшие круизы</a>
+            <li class="header__item">
+              <a class="header__link" href="#tours">Ближайшие круизы</a>
             </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">Контакты</a>
+            <li class="header__item">
+              <a class="header__link" href="#contacts">Контакты</a>
             </li>
           </ul>
         </div>
@@ -49,16 +50,16 @@
 
   <main class="main">
     <div class="main__wrapper">
-    <h1>Круизы в Антарктику</h1>
+    <h1>Круизы в&nbsp;Антарктику</h1>
     <p class="main__text">Волшебный мир айсбергов и пингвинов</p>
     </div>
 
     <section class="promo">
       <div class="promo__block">
         <div class="promo__inner promo__inner--text">
-        <h2>Путешествие на край Земли</h2>
-        <p>Это волшебное путешествие поможет вам познакомиться поближе с удивительным миром
-          Антарктики. Наш круизный лайнер отвезет вас на край Земли, где вы сможете увидеть: ледяные айсберги, несколько
+          <h2>Путешествие на&nbsp;край Земли</h2>
+        <p>Это волшебное путешествие поможет вам познакомиться поближе с&nbsp;удивительным миром
+          Антарктики. Наш круизный лайнер отвезет вас на&nbsp;край Земли, где вы сможете увидеть: ледяные айсберги, несколько
           видов пингвинов, китов, морских котиков и многое другое.</p>
         </div>
         <div class="promo__inner">
@@ -68,36 +69,33 @@
             <source srcset="img/promo-desktop@1x.webp 1x, img/promo-desktop@2x.webp 2x" type="image/webp">
             <source media="(max-width: 767px)" srcset="img/promo-mobile@1x.png 1x, img/promo-mobile@2x.png 2x">
             <source media="(max-width: 1023px)" srcset="img/promo-tablet@1x.png 1x, img/promo-tablet@2x.png 2x">
-            <img class="promo__img" src="img/promo-desktop@1x.png" srcset="img/promo-desktop@2x.png 2x" width="560" height="301" alt="Фото Пингвинов">
+            <img class="promo__img" src="img/promo-desktop@1x.png" srcset="img/promo-desktop@2x.png 2x" loading="lazy" width="560" height="301" alt="Фото Пингвинов">
           </picture>
         </div>
       </div>
     </section>
 
-    <section class="advantages">
+    <section class="advantages" id="advantages">
       <div class="advantages__block">
         <h2>Преимущества</h2>
         <ul class="advantages__list">
           <li class="advantages__item">
-            <h3>Небольшой круизный лайнер</h3>
-            <p>Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и
-              очередей и даст возможность насладиться видами и природой.</p>
+            <h3 class="advantages__title">Небольшой круизный&nbsp;лайнер</h3>
+            <p>Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и&nbsp;очередей и&nbsp;даст возможность насладиться видами и&nbsp;природой.</p>
+          </li>
+          <li class="advantages__item advantages__item--check">
+            <h3 class="advantages__title advantages__title--check">Система все&nbsp;включено</h3>
+            <p>Все наши круизы работают по&nbsp;системе “Все Включено”. Великолепные блюда и&nbsp;безлимитный бар доступны для вас 24&nbsp;часа.</p>
           </li>
           <li class="advantages__item">
-            <h3>Система все включено</h3>
-            <p>Все наши круизы работают по системе “Все Включено”. Великолепные блюда и
-              безлимитный бар доступны для вас 24 часа.</p>
-          </li>
-          <li class="advantages__item">
-            <h3>Экскурсионные туры на Zodiac</h3>
-            <p>Экскурсионные туры к берегам Антарктиды совершаются на оборудованных лодках типа
-              Zodiac в сопровождении опытных экскурсоводов.</p>
+            <h3 class="advantages__title advantages__title--motorboat">Экскурсионные туры на Zodiac</h3>
+            <p class="advantages__paragraph">Экскурсионные туры к&nbsp;берегам Антарктиды совершаются на&nbsp;оборудованных лодках типа&nbsp;Zodiac в&nbsp;сопровождении опытных экскурсоводов.</p>
           </li>
         </ul>
       </div>
     </section>
 
-    <section class="tours">
+    <section class="tours" id="tours">
       <div class="tours__block">
         <h2>Ближайшие круизы</h2>
         <ul class="tours__list">
@@ -114,6 +112,7 @@
               <img class="tours__img" src="img/astoria-desktop@1x.png" srcset="img/astoria-desktop@2x.png 2x" width="260" height="386" alt="Фото Астория">
             </picture>
             <div class="tours__inner">
+              <h4>Круиз “Астория”</h4>
             <ul class="tours__info info">
               <li class="info__item">
                 <p>Маршрут</p>
@@ -132,15 +131,16 @@
                 <span>от 11500 $</span>
               </li>
             </ul>
-            <a class="tours__button button" href="">Забронировать</a>
+            <a class="tours__button" href="#">Забронировать</a>
           </div>
           </li>
 
           <!-- Элайн -->
-          <li class="tours__item">
-            <h3>Круиз “Элайн”</h3>
-            <!-- Нет Фото Элайн" -->
+          <li class="tours__item tours__item--block">
+            <!-- <h3>Круиз “Элайн”</h3> -->
+            <!-- Фото Элайн" -->
             <div class="tours__inner tours__inner--block">
+              <h4>Круиз “Элайн”</h4>
             <ul class="tours__info info">
               <li class="info__item">
                 <p>Маршрут</p>
@@ -159,7 +159,7 @@
                 <span>от 14500 $</span>
               </li>
             </ul>
-            <a class="tours__button button" href="">Забронировать</a>
+            <a class="tours__button" href="#">Забронировать</a>
           </div>
           </li>
 
@@ -175,6 +175,7 @@
               <img class="tours__img" src="img/atlantic-desktop@1x.png" srcset="img/atlantic-desktop@2x.png 2x" width="260" height="386" alt="Фото Атлантик">
             </picture>
             <div class="tours__inner">
+              <h4>Круиз “Атлантик”</h4>
             <ul class="tours__info info">
               <li class="info__item">
                 <p>Маршрут</p>
@@ -193,7 +194,7 @@
                 <span>от 14500 $</span>
               </li>
             </ul>
-            <a class="tours__button button" href="">Забронировать</a>
+            <a class="tours__button" href="#">Забронировать</a>
           </div>
           </li>
 
@@ -209,6 +210,7 @@
               <img class="tours__img" src="img/odysseus-desktop@1x.png" srcset="img/odysseus-desktop@2x.png 2x" width="260" height="386" alt="Фото Одиссей">
             </picture>
             <div class="tours__inner">
+              <h4>Круиз “Одиссей”</h4>
             <ul class="tours__info info">
               <li class="info__item">
                 <p>Маршрут</p>
@@ -227,7 +229,7 @@
                 <span>от 9700 $</span>
               </li>
             </ul>
-            <a class="tours__button button" href="">Забронировать</a>
+            <a class="tours__button" href="#">Забронировать</a>
           </div>
           </li>
 
@@ -243,6 +245,7 @@
               <img class="tours__img" src="img/olympia-desktop@1x.png" srcset="img/olympia-desktop@2x.png 2x" width="260" height="386" alt="Фото Олимпия">
             </picture>
             <div class="tours__inner">
+              <h4>Круиз “Олимпия”</h4>
             <ul class="tours__info info">
               <li class="info__item">
                 <p>Маршрут</p>
@@ -261,7 +264,7 @@
                 <span>от 18600 $</span>
               </li>
             </ul>
-            <a class="tours__button button" href="">Забронировать</a>
+            <a class="tours__button" href="#">Забронировать</a>
           </div>
           </li>
 
@@ -277,6 +280,7 @@
               <img class="tours__img" src="img/avrora-desktop@1x.png" srcset="img/avrora-desktop@2x.png 2x" width="260" height="386" alt="Фото Аврора">
             </picture>
             <div class="tours__inner">
+              <h4>Круиз “Аврора”</h4>
             <ul class="tours__info info">
               <li class="info__item">
                 <p>Маршрут</p>
@@ -295,7 +299,7 @@
                 <span>от 11700 $</span>
               </li>
             </ul>
-            <a class="tours__button button" href="">Забронировать</a>
+            <a class="tours__button" href="#">Забронировать</a>
           </div>
           </li>
 
@@ -311,6 +315,7 @@
               <img class="tours__img" src="img/leonor-desktop@1x.png" srcset="img/leonor-desktop@2x.png 2x" width="260" height="386" alt="Фото Леонор">
             </picture>
             <div class="tours__inner">
+              <h4>Круиз “Леонор”</h4>
             <ul class="tours__info info">
               <li class="info__item">
                 <p>Маршрут</p>
@@ -329,7 +334,7 @@
                 <span>от 12500 $</span>
               </li>
             </ul>
-            <a class="tours__button button" href="">Забронировать</a>
+            <a class="tours__button" href="#">Забронировать</a>
           </div>
           </li>
 
@@ -345,6 +350,7 @@
               <img class="tours__img" src="img/minion-desktop@1x.png" srcset="img/minion-desktop@2x.png 2x" width="260" height="386" alt="Фото Минион-1">
             </picture>
             <div class="tours__inner">
+              <h4>Круиз “Минион-1”</h4>
             <ul class="tours__info info">
               <li class="info__item">
                 <p>Маршрут</p>
@@ -363,7 +369,7 @@
                 <span>от 12300 $</span>
               </li>
             </ul>
-            <a class="tours__button button" href="">Забронировать</a>
+            <a class="tours__button" href="#">Забронировать</a>
           </div>
           </li>
         </ul>
@@ -373,28 +379,28 @@
     <aside class="banner">
       <div class="banner__block">
       <h2>Раннее бронирование</h2>
-      <p>Забронируйте тур за 3-6 месяцев
-        до даты выезда и сэкономьте до 50%</p>
+      <p class="banner__text">Забронируйте тур за 3-6 месяцев
+        до&nbsp;даты выезда и сэкономьте до 50%</p>
 
       <form class="banner__form form" method="POST" action="https://echo.htmlacademy.ru" enctype="multipart/form-data">
         <p class="form__text">Оставьте заявку и мы свяжемся с вами в ближайшее время</p>
         <p class="form__paragraph">
-          <label class="visually-hidden" for="name">Введите имя</label>
           <input type="text" name="name" id="name" placeholder="Валерия" required>
+          <label class="visually-hidden" for="name">Введите имя</label>
         </p>
         <p class="form__paragraph">
-          <label class="visually-hidden" for="tel">Введите номер телефона</label>
           <input type="tel" id="tel" name="tel" pattern="[0-9]{10}" placeholder="89236889975"
             required>
+          <label class="visually-hidden" for="tel">Введите номер телефона</label>
         </p>
         <p class="form__paragraph">
-          <label class="visually-hidden" for="email">Введите свой e-mail</label>
           <input type="email" id="email" name="email" placeholder="grishaewa.lera@gmail.com"
-            required>
+          required>
+          <label class="visually-hidden" for="email">Введите свой e-mail</label>
         </p>
         <p class="form__paragraph">
-          <label for="subscribe">Я согласен на обработку моих персональных данных</label>
-          <input class="form__checkbox" type="checkbox" name="subscribe" id="subscribe" checked>
+          <input class="form__checkbox visually-hidden" type="checkbox" name="checkbox" id="checkbox" checked>
+          <label for="checkbox">Я согласен на обработку моих персональных данных</label>
         </p>
         <button class="form__button" type="submit">Оставить заявку</button>
       </form>
@@ -402,26 +408,32 @@
 
     </aside>
 
-    <section class="contacts">
+    <section class="contacts" id="contacts">
       <div class="contacts__block">
         <h2 class="visually-hidden">Контакты</h2>
-        <div class="contacts__map map">
+        <div class="contacts__map">
           <picture>
             <source media="(max-width: 767px)" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x" type="image/webp">
             <source media="(max-width: 1023px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x" type="image/webp">
             <source srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x" type="image/webp">
             <source media="(max-width: 767px)" srcset="img/map-mobile@1x.png 1x, img/map-mobile@2x.png 2x">
             <source media="(max-width: 1023px)" srcset="img/map-tablet@1x.png 1x, img/map-tablet@2x.png 2x">
-            <img class="map__img" src="img/map-desktop@1x.png" srcset="img/map-desktop@2x.png 2x" width="560" height="306" alt="г. Санкт Петербург, ул. Большая Конюшенная, 19/8">
+            <img class="contacts__img" src="img/map-desktop@1x.png" srcset="img/map-desktop@2x.png 2x" width="560" height="306" alt="г. Санкт Петербург, ул. Большая Конюшенная, 19/8">
           </picture>
         </div>
         <div class="contacts__info">
           <p>У вас ещё остались вопросы или сомнения?
-            Приезжайте к нам в офис и мы вам все расскажем.</p>
-          <span>г. Санкт Петербург, ул. Большая Конюшенная, 19/8</span>
+            Приезжайте к&nbsp;нам в&nbsp;офис и мы вам все расскажем.</p>
+          <span>г. Санкт Петербург, ул.&nbsp;Большая&nbsp;Конюшенная, 19/8</span>
+          <svg class="contacts__icon-pin" width="18" height="22" viewBox="0 0 18 22">
+            <use xlink:href="img/sprite_auto.svg#icon-pin"></use>
+          </svg>
 
           <a class="contacts__tel" href="#">
             <span>8-800-200-00-00</span>
+            <svg class="contacts__icon-tel" width="18" height="18" viewBox="0 0 18 18">
+              <use xlink:href="img/sprite_auto.svg#icon-phone"></use>
+            </svg>
           </a>
         </div>
       </div>
@@ -431,8 +443,9 @@
   <footer class="footer">
     <div class="footer__block">
 
+      <div class="footer__inner">
       <a class="footer__logo" href="#">
-        <svg class="footer__icon" width="70" height="38">
+        <svg class="footer__icon" width="70" height="38" viewBox="0 0 70 38">
           <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
         </svg>
       </a>
@@ -451,12 +464,14 @@
             <a class="footer__menu-link" href="#">Контакты</a>
           </li>
         </ul>
+      </div>
 
+      <div class="footer__inner">
         <ul class="footer__social social">
           <li class="social__item">
             <a class="social__link social__link--fb" href="https://facebook.com" target="_blank">
               <span class="visually-hidden">Мы в Фейсбуке</span>
-              <svg class="social__icon social__icon--fb" width="11" height="20">
+              <svg class="social__icon social__icon--fb" width="11" height="20" viewBox="0 0 11 20">
                 <use xlink:href="img/sprite_auto.svg#icon-fb"></use>
               </svg>
             </a>
@@ -464,7 +479,7 @@
           <li class="social__item">
             <a class="social__link social__link--insta" href="https://instagram.com" target="_blank">
               <span class="visually-hidden">Мы в Инстаграме</span>
-              <svg class="social__icon social__icon--insta" width="20" height="20">
+              <svg class="social__icon social__icon--insta" width="20" height="20" viewBox="0 0 20 20">
                 <use xlink:href="img/sprite_auto.svg#icon-insta"></use>
               </svg>
             </a>
@@ -472,15 +487,17 @@
           <li class="social__item social__item--tw">
             <a class="social__link social__link--tw" href="https://twitter.com" target="_blank">
               <span class="visually-hidden">Мы в Твиттере</span>
-              <svg class="social__icon social__icon--tw" width="20" height="16">
+              <svg class="social__icon social__icon--tw" width="20" height="16" viewBox="0 0 20 16">
                 <use xlink:href="img/sprite_auto.svg#icon-tw"></use>
               </svg>
             </a>
           </li>
         </ul>
+      </div>
 
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
