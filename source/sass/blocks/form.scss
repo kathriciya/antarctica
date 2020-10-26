@@ -2,7 +2,7 @@
   width: 403px;
   margin: 0;
   padding-top: 44px;
-  padding-right: 50px;
+  padding-right: 49px;
   padding-bottom: 50px;
   padding-left: 50px;
 
@@ -76,8 +76,29 @@
   font-family: "Montserrat", "Arial", sans-serif;
   font-style: 400;
   font-size: 14px;
-  line-height: 21px;
+  // line-height: 21px;
+  line-height: 100%;
   border: none;
+}
+
+.form input::-webkit-input-placeholder {
+  color: $color;
+  opacity: 1;
+}
+
+.form input::-moz-placeholder {
+  color: $color;
+  opacity: 1;
+}
+
+.form input:-ms-input-placeholder {
+  color: $color;
+  opacity: 1;
+}
+
+.form input::-ms-input-placeholder {
+  color: $color;
+  opacity: 1;
 }
 
 .form input::placeholder {
