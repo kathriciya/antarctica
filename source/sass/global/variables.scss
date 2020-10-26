@@ -8,9 +8,12 @@ $shadow: rgba(1, 28, 64, 0.15);
 $box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15);
 $box-shadow-form: 0 4px 45px rgba(1, 28, 64, 0.15);
 $gradient: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011c40 100%);
+$shadow-banner: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 
-$tablet-width: 1023px;
-$mobile-width: 767px;
+$breakpoint-tablet: 1023px;
+$width-tablet: 768px;
+$breakpoint-mobile: 767px;
+$mobile-width: 320px;
 
 $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;

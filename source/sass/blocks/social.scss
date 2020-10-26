@@ -2,11 +2,11 @@
   @include no-list;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  // justify-content: center;
   width: 10.09%;
   min-width: 117px;
 
-  @media (max-width: 1023px) {
+  @media (max-width: $breakpoint-tablet) {
     width: 12.83%;
     min-width: 87px;
   }
@@ -20,7 +20,7 @@
     margin-right: 33px;
     margin-bottom: -1px;
 
-    @media (max-width: 1023px) {
+    @media (max-width: $breakpoint-tablet) {
       margin-right: 23px;
     }
   }
@@ -50,7 +50,7 @@
     fill: $color;
   }
 
-  @media (max-width: 1023px) {
+  @media (max-width: $breakpoint-tablet) {
     width: 9px;
     height: 16px;
 

@@ -1,0 +1,26 @@
+.no-js .header {
+  @media (max-width: $breakpoint-mobile) {
+    position: relative;
+  }
+}
+
+.no-js .header__list {
+  @media (max-width: $breakpoint-mobile) {
+    display: block;
+    position: relative;
+  }
+}
+
+.no-js .header__menu {
+  position: relative;
+}
+
+.no-js .header__icon {
+  @media (max-width: $breakpoint-mobile) {
+    color: $color;
+  }
+}
+
+// .no-js .toggle {
+//   display: none;
+// }

@@ -2,7 +2,10 @@
 @import "global/variables.scss";
 @import "global/mixins.scss";
 @import "global/global.scss";
+@import "blocks/container.scss";
 @import "blocks/header.scss";
+@import "blocks/toggle.scss";
+@import "blocks/page-main.scss";
 @import "blocks/main.scss";
 @import "blocks/promo.scss";
 @import "blocks/advantages.scss";
@@ -13,3 +16,4 @@
 @import "blocks/contacts.scss";
 @import "blocks/footer.scss";
 @import "blocks/social.scss";
+@import "blocks/no-js.scss";
