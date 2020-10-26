@@ -1,0 +1,61 @@
+.toggle {
+  @media (max-width: $breakpoint-mobile) {
+    position: relative;
+    top: -4px;
+    right: -7px;
+    z-index: 5;
+    margin-left: auto;
+    padding: 0;
+    width: 40px;
+    height: 30px;
+
+    background-color: transparent;
+    border: none;
+
+    cursor: pointer;
+
+    &--menu {
+      background-color: transparent;
+    }
+
+    &--cross {
+      width: 30px;
+      height: 30px;
+      top: -9px;
+      right: -2px;
+      background-color: transparent;
+      padding: 13px;
+    }
+
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+.toggle__icon {
+  &--cross {
+    display: none;
+  }
+}
+
+.toggle__icon--menu {
+  width: 27px;
+  height: 14px;
+}
+
+.toggle--cross .toggle__icon--cross {
+  display: block;
+  width: 15px;
+  height: 15px;
+}
+
+.toggle--cross .toggle__icon--menu {
+  display: none;
+}
+
