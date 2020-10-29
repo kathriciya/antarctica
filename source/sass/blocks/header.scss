@@ -87,9 +87,10 @@
   display: flex;
   flex-wrap: wrap;
   width: 594px;
+  margin-top: 9px;
 
   @media (max-width: $breakpoint-tablet) {
-    margin-top: -1px;
+    margin-top: 2px;
     width: 503px;
   }
 
@@ -97,7 +98,8 @@
     display: none;
     position: relative;
     width: 100%;
-    padding-top: 40px;
+    margin-top: 0;
+    padding-top: 39px;
     padding-bottom: 17px;
     background-color: white;
 
@@ -114,6 +116,7 @@
   display: flex;
   align-items: center;
   margin-right: 33px;
+  margin-bottom: 15px;
 
   &:nth-of-type(4n) {
     margin-right: 0;
@@ -123,6 +126,7 @@
     font-size: 14px;
     line-height: 17px;
     margin-right: 23px;
+    margin-bottom: 10px;
   }
 
   @media (max-width: $breakpoint-mobile) {

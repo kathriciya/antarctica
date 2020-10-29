@@ -10,9 +10,8 @@
   padding: 50px 15px 46px 15px;
   justify-content: space-between;
 
-
   @media (max-width: $breakpoint-tablet) {
-    padding: 49px 45px 47px 45px;
+    padding: 49px 45px 44px 45px;
   }
 
   @media (max-width: $breakpoint-mobile) {
@@ -36,7 +35,7 @@
     // }
 
     @media (max-width: $breakpoint-mobile) {
-      margin-bottom: 27px;
+      margin-bottom: 10px;
     }
   }
 
@@ -57,14 +56,17 @@
   flex-wrap: wrap;
   width: 51.21%;
   min-width: 594px;
+  margin-top: 8px;
 
   @media (max-width: $breakpoint-tablet) {
     width: 65.04%;
     min-width: 441px;
+    margin-top: 2px;
   }
 
   @media (max-width: $breakpoint-mobile) {
     flex-direction: column;
+    margin-top: 0;
   }
 }
 
@@ -74,10 +76,12 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
+  margin-bottom: 15px;
 
   @media (max-width: $breakpoint-tablet) {
     font-size: 12px;
     line-height: 15px;
+    margin-bottom: 10px;
   }
 
   &:not(:nth-child(4n)) {
@@ -86,15 +90,23 @@
     @media (max-width: $breakpoint-tablet) {
       margin-right: 23px;
     }
+  }
 
-    @media (max-width: $breakpoint-mobile) {
-      margin-bottom: 17px;
-    }
+  @media (max-width: $breakpoint-mobile) {
+    margin-bottom: 17px;
   }
 }
 
 .footer__menu-link {
   color: $color-white;
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
 }
 
 .footer__logo {

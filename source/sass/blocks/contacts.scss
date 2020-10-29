@@ -130,6 +130,14 @@
   margin-top: 19px;
   position: relative;
   width: 170px;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
 }
 
 .contacts__icon-tel {

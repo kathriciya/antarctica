@@ -3,7 +3,7 @@
   background-color: $background-img;
   background-image: url("../img/banner-desktop@1x.jpg");
   background-repeat: no-repeat;
-  background-size: 1366px 555px;
+  background-size: cover;
   background-position: center top;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -14,8 +14,7 @@
   @media (max-width: $breakpoint-tablet) {
     filter: $shadow-banner;
     background-image: url("../img/banner-tablet@1x.jpg");
-    // background-size: cover;
-    background-size: 768px 805px;
+    background-size: cover;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/banner-tablet@2x.jpg");
@@ -25,8 +24,7 @@
   @media (max-width: $breakpoint-mobile) {
     filter: none;
     background-image: url("../img/banner-mobile@1x.png");
-    // background-size: cover;
-    background-size: 320px 760px;
+    background-size: cover;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/banner-mobile@2x.png");
