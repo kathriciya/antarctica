@@ -92,6 +92,12 @@
   margin-bottom: 26px;
   cursor: pointer;
 
+  &:focus {
+    outline: 3px solid #4d90fe;
+    outline-offset: 5px;
+    outline-style: auto;
+  }
+
   &:hover .tours__inner {
     display: block;
     position: absolute;
