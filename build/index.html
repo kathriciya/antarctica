@@ -139,7 +139,7 @@
                 <span>от 11500 $</span>
               </li>
             </ul>
-            <a class="tours__button" href="#">Забронировать</a>
+            <a class="tours__button" href="#" tabindex="1">Забронировать</a>
           </div>
         </li>
         <li class="tours__item">
@@ -172,7 +172,7 @@
                 <span>от 14500 $</span>
               </li>
             </ul>
-            <a class="tours__button" href="#">Забронировать</a>
+            <a class="tours__button" href="#" tabindex="2">Забронировать</a>
           </div>
         </li>
 
@@ -206,7 +206,7 @@
                 <span>от 14500 $</span>
               </li>
             </ul>
-            <a class="tours__button" href="#">Забронировать</a>
+            <a class="tours__button" href="#" tabindex="3">Забронировать</a>
           </div>
         </li>
         <li class="tours__item">
@@ -239,7 +239,7 @@
                 <span>от 9700 $</span>
               </li>
             </ul>
-            <a class="tours__button" href="#">Забронировать</a>
+            <a class="tours__button" href="#" tabindex="4">Забронировать</a>
           </div>
         </li>
         <li class="tours__item">
@@ -272,7 +272,7 @@
                 <span>от 18600 $</span>
               </li>
             </ul>
-            <a class="tours__button" href="#">Забронировать</a>
+            <a class="tours__button" href="#" tabindex="5">Забронировать</a>
           </div>
         </li>
         <li class="tours__item">
@@ -305,7 +305,7 @@
                 <span>от 11700 $</span>
               </li>
             </ul>
-            <a class="tours__button" href="#">Забронировать</a>
+            <a class="tours__button" href="#" tabindex="6">Забронировать</a>
           </div>
         </li>
         <li class="tours__item">
@@ -338,7 +338,7 @@
                 <span>от 12500 $</span>
               </li>
             </ul>
-            <a class="tours__button" href="#">Забронировать</a>
+            <a class="tours__button" href="#" tabindex="7">Забронировать</a>
           </div>
         </li>
         <li class="tours__item tours__item--minion">
@@ -371,7 +371,7 @@
                 <span>от 12300 $</span>
               </li>
             </ul>
-            <a class="tours__button" href="#">Забронировать</a>
+            <a class="tours__button" href="#" tabindex="8">Забронировать</a>
           </div>
         </li>
       </ul>
@@ -389,20 +389,20 @@
           <form class="banner__form form" method="POST" action="https://echo.htmlacademy.ru" enctype="multipart/form-data">
             <p class="form__text">Оставьте заявку и&nbsp;мы&nbsp;свяжемся с вами в&nbsp;ближайшее время</p>
             <p class="form__paragraph">
-              <input type="text" name="name" id="name" placeholder="Валерия" aria-label="Введите имя" required="">
+              <input class="form__input" type="text" name="name" id="name" placeholder="Валерия" aria-label="Введите имя" required="">
               <label class="visually-hidden" for="name">Введите имя</label>
             </p>
             <p class="form__paragraph">
-              <input type="tel" id="tel" name="tel" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" placeholder="89236889975" aria-label="Введите телефон" required="">
+              <input class="form__input" type="tel" id="tel" name="tel" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" placeholder="89236889975" aria-label="Введите телефон" required="">
               <label class="visually-hidden" for="tel">Введите номер телефона</label>
             </p>
             <p class="form__paragraph form__paragraph--email">
-              <input type="email" id="email" name="email" placeholder="grishaewa.lera@gmail.com" aria-label="Введите адрес почты" required="">
+              <input class="form__input" type="email" id="email" name="email" placeholder="grishaewa.lera@gmail.com" aria-label="Введите адрес почты" required="">
               <label class="visually-hidden" for="email">Введите свой e-mail</label>
             </p>
             <p class="form__paragraph form__paragraph--checkbox">
               <input class="form__checkbox visually-hidden" type="checkbox" name="checkbox" id="checkbox" aria-label="Подтвердите обработку персональных данных" required="">
-              <label for="checkbox">Я согласен на обработку <span class="form__span">моих персональных данных</span></label>
+              <label class="form__checkbox-label" for="checkbox">Я согласен на обработку <span class="form__span">моих персональных данных</span></label>
             </p>
             <button class="form__button" type="submit">Оставить заявку</button>
           </form>
