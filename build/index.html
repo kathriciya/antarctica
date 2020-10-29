@@ -142,8 +142,17 @@
             <a class="tours__button" href="#">Забронировать</a>
           </div>
         </li>
-        <li class="tours__item tours__item--eline">
-          <div class="tours__inner tours__inner--block">
+        <li class="tours__item">
+          <h3>Круиз “Элайн”</h3>
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/leonor-mobile@1x.webp 1x, img/leonor-mobile@2x.webp 2x" type="image/webp">
+            <source media="(max-width: 1023px)" srcset="img/leonor-tablet@1x.webp 1x, img/leonor-tablet@2x.webp 2x" type="image/webp">
+            <source srcset="img/leonor-desktop@1x.webp 1x, img/leonor-desktop@2x.webp 2x" type="image/webp">
+            <source media="(max-width: 767px)" srcset="img/leonor-mobile@1x.png 1x, img/leonor-mobile@2x.png 2x">
+            <source media="(max-width: 1023px)" srcset="img/leonor-tablet@1x.png 1x, img/leonor-tablet@2x.png 2x">
+            <img class="tours__img" src="img/leonor-desktop@1x.png" srcset="img/leonor-desktop@2x.png 2x" loading="lazy" width="260" height="386" alt="Фото Элайн">
+          </picture>
+          <div class="tours__inner">
             <h4>Круиз “Элайн”</h4>
             <ul class="tours__info info">
               <li class="info__item">
@@ -166,6 +175,7 @@
             <a class="tours__button" href="#">Забронировать</a>
           </div>
         </li>
+
         <li class="tours__item">
           <h3>Круиз “Атлантик”</h3>
           <picture>
@@ -383,7 +393,7 @@
               <label class="visually-hidden" for="name">Введите имя</label>
             </p>
             <p class="form__paragraph">
-              <input type="tel" id="tel" name="tel" pattern="[0-9]{11}" placeholder="89236889975" aria-label="Введите телефон" required="">
+              <input type="tel" id="tel" name="tel" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" placeholder="89236889975" aria-label="Введите телефон" required="">
               <label class="visually-hidden" for="tel">Введите номер телефона</label>
             </p>
             <p class="form__paragraph form__paragraph--email">
@@ -391,7 +401,7 @@
               <label class="visually-hidden" for="email">Введите свой e-mail</label>
             </p>
             <p class="form__paragraph form__paragraph--checkbox">
-              <input class="form__checkbox visually-hidden" type="checkbox" name="checkbox" id="checkbox" aria-label="Подтвердите обработку персональных данных" checked="">
+              <input class="form__checkbox visually-hidden" type="checkbox" name="checkbox" id="checkbox" aria-label="Подтвердите обработку персональных данных" required="">
               <label for="checkbox">Я согласен на обработку <span class="form__span">моих персональных данных</span></label>
             </p>
             <button class="form__button" type="submit">Оставить заявку</button>
