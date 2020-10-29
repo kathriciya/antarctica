@@ -16,3 +16,5 @@
     toggler.classList.toggle('toggle--cross');
   });
 })();
+
+svg4everybody();
