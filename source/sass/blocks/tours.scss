@@ -30,8 +30,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  // margin-top: 200px;
-  // margin-bottom: 0;
 
   font-weight: 600;
   font-size: 28px;
@@ -67,8 +65,6 @@
 }
 
 .tours__img {
-  // width: 100%;
-  // height: auto;
   width: 260px;
   height: 386px;
   background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, $color 100%);
@@ -86,13 +82,17 @@
   display: flex;
   position: relative;
   width: 260px;
-  // width: 23%;
   margin-right: 1.4%;
-  // min-width: 260px;
   margin-bottom: 26px;
   cursor: pointer;
 
-  &:focus {
+  &:focus .tours__inner {
+    display: block;
+    position: absolute;
+    z-index: 7;
+  }
+
+  &:focus .tours__button {
     outline: 3px solid #4d90fe;
     outline-offset: 5px;
     outline-style: auto;
